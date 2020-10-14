@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var toggleTextButton: UIButton!
+    @IBOutlet var redView: UIView!
+    @IBOutlet var YelloyView: UIView!
+    @IBOutlet var greenView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func toggleTextButtonPress() {
+    }
 }
 
