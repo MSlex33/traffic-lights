@@ -16,41 +16,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4l-Na-mN1">
-                                <rect key="frame" x="65" y="755" width="284" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4l-Na-mN1">
+                                <rect key="frame" x="65" y="775" width="284" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="START"/>
                                 <connections>
                                     <action selector="toggleTextButtonPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBy-W3-6It"/>
-                                    <action selector="toggleTextButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhA-aa-A0J"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="An3-bb-GbC" userLabel="ViewRed">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="An3-bb-GbC" userLabel="ViewRed">
                                 <rect key="frame" x="132" y="95" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cJ-9G-e56" userLabel="ViewYelloy">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cJ-9G-e56" userLabel="ViewYelloy">
                                 <rect key="frame" x="132" y="284" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KR6-n6-btP" userLabel="ViewGreen">
-                                <rect key="frame" x="132" y="473" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KR6-n6-btP" userLabel="ViewGreen">
+                                <rect key="frame" x="132" y="473" width="150" height="170"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3cJ-9G-e56" secondAttribute="trailing" constant="132" id="0xg-3R-X9i"/>
+                            <constraint firstItem="3cJ-9G-e56" firstAttribute="top" secondItem="An3-bb-GbC" secondAttribute="bottom" constant="39" id="1pM-gz-Lsf"/>
+                            <constraint firstItem="3cJ-9G-e56" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="3qn-bc-S0z"/>
+                            <constraint firstItem="A4l-Na-mN1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="4PJ-I3-JPe"/>
+                            <constraint firstItem="3cJ-9G-e56" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.167411" id="9BK-eZ-fmu"/>
+                            <constraint firstItem="3cJ-9G-e56" firstAttribute="top" secondItem="An3-bb-GbC" secondAttribute="bottom" constant="39" id="E8l-4a-V7j"/>
+                            <constraint firstItem="An3-bb-GbC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="MXv-qm-CDe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="An3-bb-GbC" secondAttribute="trailing" constant="132" id="N0E-WL-Fyu"/>
+                            <constraint firstItem="A4l-Na-mN1" firstAttribute="top" secondItem="KR6-n6-btP" secondAttribute="bottom" constant="132" id="RxO-IN-gsm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KR6-n6-btP" secondAttribute="trailing" constant="132" id="Tu0-x3-FDS"/>
+                            <constraint firstItem="KR6-n6-btP" firstAttribute="top" secondItem="3cJ-9G-e56" secondAttribute="bottom" constant="39" id="Yg3-1v-aHL"/>
+                            <constraint firstItem="KR6-n6-btP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.189732" id="gog-Vf-DRs"/>
+                            <constraint firstItem="An3-bb-GbC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.167411" id="hPg-rU-0G9"/>
+                            <constraint firstItem="An3-bb-GbC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="ioT-34-T1L"/>
+                            <constraint firstItem="KR6-n6-btP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="jkE-US-ZIX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A4l-Na-mN1" secondAttribute="trailing" constant="65" id="kp3-sn-EWI"/>
+                            <constraint firstItem="A4l-Na-mN1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0334821" id="ppe-Sr-egl"/>
+                            <constraint firstItem="A4l-Na-mN1" firstAttribute="top" secondItem="KR6-n6-btP" secondAttribute="bottom" constant="132" id="qVL-Zd-S4d"/>
+                            <constraint firstItem="KR6-n6-btP" firstAttribute="top" secondItem="3cJ-9G-e56" secondAttribute="bottom" constant="39" id="vnL-zR-yS4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A4l-Na-mN1" secondAttribute="bottom" constant="57" id="yOz-53-BsM"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="YelloyView" destination="3cJ-9G-e56" id="CZk-l5-KbE"/>
                         <outlet property="greenView" destination="KR6-n6-btP" id="jBF-ZU-GIa"/>
                         <outlet property="redView" destination="An3-bb-GbC" id="9gU-d1-Tvb"/>
                         <outlet property="toggleTextButton" destination="A4l-Na-mN1" id="94J-Mm-zAv"/>
+                        <outlet property="yelloyView" destination="3cJ-9G-e56" id="jpE-Ha-tmH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -65,8 +82,14 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
